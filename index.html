@@ -10,7 +10,7 @@
 </head>
 <body>
 <!-- nav bar -->
-<div class="nav navbar navbar-default">
+<nav class="nav navbar navbar-default">
 	<div class="container-fluid">
 		<div class="navbar-header"><button type="button" class="navbar-toggle collapsed" data-toggle="collapsed" data-target="#navbar-collapse">
 				<span class="icon-bar"></span>
@@ -28,54 +28,275 @@
 				<li><a href="#our_story">Our story</a></li>
 				<li><a href="#review">Review</a></li>
 				<li><a href="#menu">Menu</a></li>
-				<li><a href="#contact">Menu</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div>
 	</div>
-</div>
+</nav>
 <!-- nav-bar -->
 <!-- carousel -->
 <div class="container-fluid wrap">
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
-		  	<li data-target="myCarousel" data-slide-to="0"></li>
-				<li data-target="myCarousel" data-slide-to="0"></li>
-				<li data-target="myCarousel" data-slide-to="0"></li>
+		  	<li data-target="myCarousel" class="active" data-slide-to="0"></li>
+				<li data-target="myCarousel" data-slide-to="1"></li>
+				<li data-target="myCarousel" data-slide-to="2"></li>
 		</ol>
-		<div class="carousel-inner">
-			<div class="item-main_img1">
+		<div class="carousel-inner ">
+			<div class="item main_img1 active">
 				<div class="carousel-caption">
-				<img src="img/logo-01.png" alt="logo" class="img-responsive main_logo active">
+				<img src="img/logo-01.png" alt="logo" class="img-responsive main_logo center-block">
 				</div>
 			</div>
-			<div class="item-main_img2">
+			<div class="item main_img2">
 				<div class="carousel-caption">
 					<h1>Eat Local</h1>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis, doloribus ea!</p>
 					<a href="" class="btn btn-lg btn-primary" role="button">Learn More</a>
 				</div>
 			</div>
-			<div class="item-main_img3">
+			<div class="item main_img3">
 				<div class="carousel-caption">
 					<h1>From farm to Table</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit perferendis totam maiores.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem facilis, doloribus ea!</p>
 					<a href="" class="btn btn-lg btn-primary" role="button">Learn More</a>
 				</div>
 			</div>
 		</div>
 		<!-- end carousel -->
-<a href="myCarousel" class="left carousel-control" role="button" data-slide="prev">
-	<span class="glyphicon glyphicon-cheveron-left" aria-hidden="true"></span>
+<a href="#myCarousel" class="left carousel-control" role="button" data-slide="prev">
+	<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
 	<span class="sr-only">Previous</span>
 </a>
-	<a href="#myCarousel" class="right carousel-control" role="button" data-slides="next">
-		<span class="glyphicon glyphicon-checron-right" aria-hidden="true"></span>
+	<a href="#myCarousel" class="right carousel-control" role="button" data-slide="next">
+		<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 		<span class="sr-only">Next</span>
 	</a>
 	</div>
 </div>
+
+<!-- our story -->
+
+<div id="our_story" class="conatiner-fluid">
+	<div class="row">
+		<div class="col-sm-4 col-xs-offset-1">
+			<h1>Our Story</h1>
+			<h3>One man. one dream.</h3>
+		</div>
+		<div class="col-sm-5 col-sm-offset-1">
+			<h2 class="story-year">1982</h2>
+			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias pariatur eaque optio, id rerum reiciendis eveniet veritatis inventore ut quod laborum accusantium quae architecto sequi ipsum sunt aperiam hic odio.</p>
+			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt magni quaerat molestias, necessitatibus sint minus veniam placeat ea magnam maiores aliquam, accusamus tempora iusto dolorum porro id quia, vel voluptatibus!</p>
+			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure vero amet at, numquam enim qui iste autem. Illum velit officiis, quas nostrum voluptatem quod tempora? Modi expedita nesciunt enim quas!</p>
+			<p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit blanditiis voluptates repellendus, unde neque excepturi, adipisci nostrum et, ullam facilis cumque. Odio quidem obcaecati fugiat sequi, aspernatur praesentium, aut! Asperiores?</p>
+		</div>
+	</div>
+</div>
+<!-- end of our story -->
+
+<div id="review" class="container-fluid">
+	<div class="row text-center">
+		<div class="col-sm-8 center">
+			<h1>Fresno Bee</h1>
+			<p>“The freshest and best ingredients come together to make some of the best food I have ever ate. You can really taste the Central Valley in every bite”</p>
+		</div>
+	</div>
+</div>
+
+<!-- Menu -->
+<div id="menu">
+	<div class="container">
+		<div class="row text-center">
+			<h1>Menu</h1>
+		</div>
+		<div class="navbar">
+			<ul class="nav nav-tabs nav-justified">
+				<li class="active"><a href="#appetizer" data-toggle="tab">Appetizer</a></li>
+				<li><a href="#lunch" data-toggle="tab">Lunch</a></li>
+				<li><a href="#dinner" data-toggle="tab">Dinner</a></li>
+				<li><a href="#dessert" data-toggle="tab">Dessert</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="appetizer" class="tab-pane fade active in">
+					<div class="col-sm-3 col-xs-6 food app1">
+						<img src="img/dip.jpg" alt="dip" class="img-responsive img-thumbnail">
+						<h3>Appetizer 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, dolores quaerat sint. Molestias accusamus molestiae quidem excepturi, dolores adipisci blanditiis!</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 food app2">
+						<img src="img/eggplant.jpg" alt="eggplnat" class="img-responsive img-thumbnail">
+						<h3>Appetizer 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, dolores quaerat sint. Molestias accusamus molestiae quidem excepturi, dolores adipisci blanditiis!</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 food app3">
+						<img src="img/meat.jpg" alt="meat" class="img-responsive img-thumbnail">
+						<h3>Appetizer 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, dolores quaerat sint. Molestias accusamus molestiae quidem excepturi, dolores adipisci blanditiis!</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 food app4">
+						<img src="img/bruschetta.jpg" alt="bruschetta" class="img-responsive img-thumbnail">
+						<h3>Appetizer 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, dolores quaerat sint. Molestias accusamus molestiae quidem excepturi, dolores adipisci blanditiis!</p>
+					</div>
+				</div>
+				<div id="lunch" class="tab-pane fade">
+					<div class="col-sm-3 col-xs-6 food lunch1">
+						<img src="img/lunch1.jpg" alt="lunch item 1" class="img-responsive img-thumbnail">
+						<h3>Lunch 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quibusdam et minus perferendis veritatis praesentium beatae, ipsum amet veniam libero!</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 food lunch2">
+						<img src="img/lunch2.jpg" alt="lunch item 2" class="img-responsive img-thumbnail">
+						<h3>Lunch 2</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quibusdam et minus perferendis veritatis praesentium beatae, ipsum amet veniam libero!</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 food lunch3">
+						<img src="img/lunch3.jpg" alt="lunch item 3" class="img-responsive img-thumbnail">
+						<h3>Lunch 3</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quibusdam et minus perferendis veritatis praesentium beatae, ipsum amet veniam libero!</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 food lunch4">
+						<img src="img/lunch4.jpg" alt="lunch item 4" class="img-responsive img-thumbnail">
+						<h3>Lunch 4</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum quibusdam et minus perferendis veritatis praesentium beatae, ipsum amet veniam libero!</p>
+					</div>
+				</div>
+				<div id="dinner" class="tab-pane fade">
+					<div class="col-sm-3 col-xs-6 food Dinner1">
+						<img src="img/dinner1.jpg" alt="dinner item 1" class="img-responsive img-thumbnail">
+						<h3>Dinner 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex omnis dolores facilis quas, laboriosam vel expedita fuga blanditiis, totam eveniet!</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 food Dinner2">
+						<img src="img/dinner2.jpg" alt="dinner item 2" class="img-responsive img-thumbnail">
+						<h3>Dinner 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis et natus quam aspernatur, amet laborum debitis sit reiciendis cumque maiores.</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 food Dinner3">
+						<img src="img/dinner3.jpg" alt="dinner item 3" class="img-responsive img-thumbnail">
+						<h3>Dinner 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias iste minus dolores nulla. A fugit sint doloribus ab possimus, accusantium.</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 food Dinner4">
+						<img src="img/dinner4.jpg" alt="dinner item 4" class="img-responsive img-thumbnail">
+						<h3>Dinner 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut error dolores, magnam aliquid ipsam amet et libero voluptate, distinctio voluptas.</p>
+					</div>
+				</div>
+				<div id="dessert" class="tab-pane fade">
+					<div class="col-sm-3 col-xs-6 food dessert1">
+						<img src="img/dessert1.jpg" alt="" class="img-responsive img-thumbnail">
+						<h3>Dessert 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, veniam. Excepturi repudiandae maxime deleniti ipsum, repellat illo dolorum sapiente provident.</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 food dessert2">
+						<img src="img/dessert2.jpg" alt="" class="img-responsive img-thumbnail">
+						<h3>Dessert 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, quibusdam officia numquam. Minima amet consequuntur mollitia perferendis natus id iure.</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 food dessert3">
+						<img src="img/dessert3.jpg" alt="" class="img-responsive img-thumbnail">
+						<h3>Dessert 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae, ut, neque corrupti id officia temporibus obcaecati. Molestiae eligendi, at odio?</p>
+					</div>
+					<div class="col-sm-3 col-xs-6 food dessert4">
+						<img src="img/dessert4.jpg" alt="" class="img-responsive img-thumbnail">
+						<h3>Dessert 1</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro maiores blanditiis consequatur quibusdam aut voluptatibus beatae ad sapiente exercitationem dignissimos.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End of menu section -->
+
+<!-- Begining of contact form section -->
+
+<div id="contact">
+	<div class="container-fluid">
+		<div class="col-sm-8 col-sm-offset-2">
+			<div class="row">
+				<div class="col-sm-12">
+					<h1 class="text-uppercase">Contact Us</h1>
+				</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae mollitia nulla molestiae aperiam, autem cupiditate.</p>
+			</div>
+		</div>
+		<div class="row contact-bottom">
+			<div class="col-sm-6">
+				<div class="col-sm-12">
+					<contact-form>
+						<form action="">
+							<div class="form-group">
+								<label for="">Name<span>*</span></label>
+								<input type="text" class="form-control" placeholder="Email">
+							</div>
+							<div class="form-group">
+								<label for="">Email<span>*</span></label>
+								<input type="text" class="form-control" placeholder="Password">
+							</div>
+							<div class="form-group">
+								<label for="">Subject<span>*</span></label>
+								<input type="text" class="form-control" placeholder="Password"></div>
+							<div class="form-group">
+								<label for="">Message<span>*</span></label>
+								<input type="text" class="form-control" placeholder="">
+							</div>
+							<div class="checkbox">
+								<label for="checkbox">
+									<input type="checkbox">I'm not a Robot</input>
+								</label>
+							</div>
+							<div class="button btn btn-default center-block" type="submit">Send-Message</div>
+							<p class="text-center" id="contact-fine-print">All Fileds Marked</p>
+						</form>
+					</contact-form>
+				</div>
+			</div>
+			<div class="col-sm-5">
+				<address>
+					<strong class="text-uppercase">restaurant</strong><br>
+					123 Fulton St.<br>
+					Fresno,CA 93728<br>
+					P: (123) 456-7890
+				</address>
+
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3197.604061094045!2d-119.78796568436815!3d36.73206927923088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809460a5cfdf4b6b%3A0xab092ce50c284a0a!2sBitwise+Industries!5e0!3m2!1sen!2sus!4v1540435638001" width="400" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+
+
+
+
 	<!-- javascript	 -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script>$(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+              if( $(this).attr("href") =="#myCarousel"
+                  || $(this).attr("href")=="#appetizer"
+                  || $(this).attr("href")=="#lunch"
+                  || $(this).attr("href")=="#dinner"
+                  || $(this).attr("href")=="#dessert") return; //These are the exceptions
+              if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                  if (target.length) {
+                      $('html,body').animate({
+                          scrollTop: target.offset().top
+                      }, 1000);
+                      return false;
+                  }
+              }
+          });
+      });
+		</script>
 </body>
 </html>
